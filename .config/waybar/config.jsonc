@@ -21,8 +21,6 @@
         /* ----- */ "custom/separator",
         "hyprland/language",
         /* ----- */ "custom/separator",
-	"battery",
-        /* ----- */ "custom/separator",
         "pulseaudio#output",
         "pulseaudio#input",
         /* ----- */ "custom/separator",
@@ -50,20 +48,6 @@
             "locked": "",
             "unlocked": ""
         }
-    },
-    "battery": {
-        "states": {
-            "critical": 20
-        },
-        "format": "{capacity}% {icon} ",
-        "format-full": "full% {icon} ",
-        "format-charging": "{capacity}%  {icon} ",
-        "format-plugged": "{capacity}%  {icon} ",
-        "format-alt": "{time} {icon} ",
-	"interval": 1,
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
     },
     "tray": {
         // "icon-size": 21,

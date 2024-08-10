@@ -67,14 +67,12 @@ button:hover {
 }
 
 #clock,
-#battery,
 #network,
 #pulseaudio,
 #tray,
 /* #keyboard-state, */
 #language,
-#custom-notifications,
-#battery {
+#custom-notifications {
   color: #ffffff;
 }
 
@@ -136,14 +134,6 @@ label:focus {
 
 #custom-notifications {
   margin-left: 3px;
-}
-
-#battery {
-  color: #C099FF;
-}
-
-#battery.critical{
-  color: #f7768e;
 }
 
 /*
