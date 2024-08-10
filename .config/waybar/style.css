@@ -1,0 +1,153 @@
+* {
+  font-family: "jetbrains mono nerd font", roboto, helvetica, arial, sans-serif;
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: rgba(43, 48, 59, 0.5);
+  border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #ffffff;
+}
+*/
+
+window#waybar.termite {
+  background-color: #3f3f3f;
+}
+
+window#waybar.chromium {
+  background-color: #000000;
+  border: none;
+}
+
+button {
+  /* use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
+}
+
+/* https://github.com/alexays/waybar/wiki/faq#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+  background: inherit;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+  background-color: #64727d;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+/* #keyboard-state, */
+#language
+#custom-notifications {
+  color: #ffffff;
+}
+
+#window,
+#workspaces {
+  margin: 0 4px;
+}
+
+.modules-right {
+  margin-right: 7px;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#network {
+  color: #7dcfff;
+  padding-right: 7px;
+}
+
+#network.disconnected {
+  color: #f7768e;
+}
+
+#pulseaudio {
+  color: #f1c40f;
+}
+
+#pulseaudio.output{
+  padding-right: 5px;
+}
+
+#pulseaudio.input  {
+  padding-right: 5px;
+}
+
+#temperature {
+  background-color: #f0932b;
+}
+
+#temperature.critical {
+  background-color: #eb4d4b;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+#language {
+  color: #9ece6a;
+  min-width: 16px;
+}
+
+#custom-notifications {
+  margin-left: 3px;
+}
+
+/*
+#keyboard-state {
+  color: #97e1ad;
+  min-width: 16px;
+}
+
+#keyboard-state > label {
+  padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+  background: rgba(0, 0, 0, 0.2);
+}
+*/
