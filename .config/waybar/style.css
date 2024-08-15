@@ -1,6 +1,6 @@
 * {
   font-family: "jetbrains mono nerd font", roboto, helvetica, arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 window#waybar {
@@ -23,6 +23,11 @@ window#waybar.solo {
     background-color: #ffffff;
 }
 */
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
 
 window#waybar.termite {
   background-color: #3f3f3f;
@@ -83,6 +88,7 @@ button:hover {
 
 .modules-right {
   margin-right: 7px;
+  padding-right: 2px;
 }
 
 label:focus {
@@ -91,7 +97,7 @@ label:focus {
 
 #network {
   color: #7dcfff;
-  padding-right: 7px;
+  padding-right: 10px;
 }
 
 #network.disconnected {
