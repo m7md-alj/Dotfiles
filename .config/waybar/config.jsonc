@@ -21,6 +21,8 @@
         /* ----- */ "custom/separator",
         "hyprland/language",
         /* ----- */ "custom/separator",
+	"battery",
+        /* ----- */ "custom/separator",
         "pulseaudio#output",
         "pulseaudio#input",
         /* ----- */ "custom/separator",
